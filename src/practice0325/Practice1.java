@@ -1,6 +1,5 @@
 package practice0325;
 
-import java.util.Calendar;
 import java.util.Scanner;
 
 public class Practice1 {
@@ -29,15 +28,19 @@ public class Practice1 {
         Scanner scanner = new Scanner(System.in);
         Practice1 cal = new Practice1();
 
-        System.out.println("달을 입력하세요.");
-        int month = scanner.nextInt();
+        System.out.println("반복 횟수를 입력하세요.");
+        int repeat = scanner.nextInt();
 
-        System.out.printf("해당 달의 최대 일수는 %d입니다.", cal.getmaxDaysOfMonth(month));
+        for( int i = 0; i < repeat; i++) {
+            System.out.println("달을 입력하세요.");
+            int month = scanner.nextInt();
 
-        System.out.println();
+            System.out.printf("해당 달의 최대 일수는 %d입니다.", cal.getmaxDaysOfMonth(month));
+            System.out.println();
+        }
 
-
-        cal.printSampleCalender();
+        System.out.println("bye!");
+        //cal.printSampleCalender();
         scanner.close();
 
         /*
@@ -67,10 +70,6 @@ public class Practice1 {
         System.out.printf("두 수의 합은 %d 입니다", result);
         scanner.close();
         */
-
-
-
-
     }
 
 }
