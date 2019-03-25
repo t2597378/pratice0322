@@ -9,14 +9,20 @@ public class Gugudanbaeyeol {
 
         System.out.println();
 
-        for(int i=0; i < result.length;i++){
-            result[i]= 2*(i+1);
-        }
+        for(int plusnum = 2; plusnum <= 9;plusnum++){
 
-        for(int i=0;i<result.length;i++){
+            for(int i=0; i < result.length;i++){
+                result[i]= plusnum *(i+1);
+            }
 
-            System.out.println(result[i]);
-            
+            for(int i=0;i<result.length;i++){
+
+                System.out.println(result[i]);
+
+
+            }
+
+            System.out.println();
         }
 
     }
